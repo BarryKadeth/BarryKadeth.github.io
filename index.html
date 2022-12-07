@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Barrys's Page</title>
+        <link rel="icon" href="img/man.png">
+        <link rel="stylesheet" type="text/css" href="style.css" >
+    </head>
+
+    <body>
+        <!-------Main Page------->
+        <section class="main">
+            <nav class="navbar" id="navbar">
+
+                <button class="hamburgerButton" id="hamburger" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                    <img class="threeStripes" src="img/menu.png"  alt="menu">
+                </button>
+
+                <ul id="mainMenu">
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#myPosts">Blog Posts</a></li>
+                    <li><a href="#contactMe">Contact</a></li>
+                    
+                </ul>
+
+
+
+                <div class ="mainSocials">
+                    <a href="https://www.linkedin.com/in/barrykadeth">
+                        <img src="img/linkedin.png" width ="40" alt="linkedin">
+                    </a>    
+                    <a href="https://www.github.com/barrykadeth">
+                        <img src="img/github.png" width ="40" alt="github">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+                        <img src="img/youtube.png" width ="40" alt="youtube">
+                    </a>
+                    <a href="Baramey_KadethCV.pdf">
+                        <img src="img/CV.png" width ="40" alt="cv">
+                    </a>
+                </div>
+
+            </nav>
+
+            <div class="mainArea">
+                <div class="mainText">
+                    <h1>Barry Kadeth</h1>
+                    <p>Master of Software Development Student</p>
+                    <a href="#aboutMe">
+                        <div class="aboutButton" id="aboutButton">About Me</div>
+                    </a>
+                </div>
+            </div>
+
+            
+
+        </section>
+
+        <!-------About Me------->
+        <section class="sub-section" id="aboutMe">
+            <div class="blurb">
+                <h2>About Me</h2>
+                <p>
+                    Hi there! My name is Baramey Kadeth and I am a software Development
+                    student at Victoria University of Wellington.
+                </p>
+                <p>
+                    This is filler text: whenever the moon and stars are set,
+                    whenever the winds are high. All night long in the dark and
+                    wet a man goes riding by. Late in the night when the fires
+                    are out, why does he gallop and gallop about? 
+                </p>
+            </div>
+            <div class="barameyPicture">
+                <img class="bazPic" src="img/barameyQT.jpg"  alt="Picture of Me!">
+            </div>
+        </section>
+
+        <!-------Experience------->
+        <section class="sub-sectionExperience" id="experience">
+            <h2>Experience</h2>
+            <div class="experienceContainer">
+                <div class="experienceIndividual">
+                    <h3>". $row["title"] . "<br><em>" . $row["start"]. " - " . $row["end"].</em></h3>
+                    <p>" . $row["content"] ."</p>
+                    </div>
+
+            </div>
+        </section>
+
+        <!------- Blog ------->
+        <section class="sub-sectionBlog" id="myPosts">
+            <h2>Blog Posts</h2>
+            <div class="blogContainer">
+                <div class="blogIndividual">
+                    <h3>". $row["title"] ."</h3>
+                    <div class="blogBlurb">
+                        <p>" . $row["blurb"] ."</p>
+                    </div>
+                    <div class="blogContent">
+                        <p>" . $row["content"] ."</p>
+                    </div>
+                </div>
+        </section>
+        
+        <!------- Contact: ------->
+        <footer id="contactMe">
+            <br>
+            <h2 class="footerTitle">Contact Me!</h2>
+            <div class="contactContainer">
+                <div class="contactMe">
+                    <p>Email me at <strong><a href = "mailto: barameykadeth@gmail.com">barameykadeth@gmail.com</a></strong> and I will contact you soon!</p>   
+                    <p>Name:</p>
+                    <form class="contactInput" action="contact.php" method="post">
+                        <input class="inputDetails" type="text" name="name">
+                        <p>Email:</p>
+                        <input class="inputDetails" type="text" id="email" name="email" required>
+                        <p>Message:</p>
+                        <input class="inputMessage" type="text" name="message">
+                        <br>
+                        <br>
+                        <input class="inputButton" type="submit" value="Submit" id="inputButton" onclick="alertContact()">
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <script src="JSCode.js"></script>
+    </body>
+</html>

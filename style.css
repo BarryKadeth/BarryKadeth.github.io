@@ -1,0 +1,275 @@
+/*calculate padding with inner width*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/********************* Visual Styles: tags *********************/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: rgb(34, 34, 34);
+}
+
+h1 {
+    font-size: 100px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 45px;
+    margin: 10px;
+}
+
+input {
+    margin-left: 15px;
+    background-color: rgb(252, 204, 212);
+}
+
+li {
+    text-decoration: none; /*to remove line under links*/
+}
+
+nav {
+    display: flex; /*to make appear in line*/
+    justify-content: space-between;
+    background-color: white;
+    border: solid black 1px;
+}
+
+section {
+    background-color: rgb(252, 204, 212);
+}
+
+p {
+    margin: 15px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width:500px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+
+
+/********************* Visual Styles: classes *********************/
+
+.aboutButton {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top:9px;
+    background-color: rgb(255, 220, 105);
+}
+
+.bazPic {
+    width: 300px; 
+}
+
+.barameyPicture {
+    display: flex;
+    align-items: center;
+}
+
+.blogContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blogContent {
+    display: none;
+}
+
+.blogIndividual {
+    background-color: rgb(226, 251, 249);
+    border-radius: 25px;
+    width: 600px;
+    height: 150px;
+    box-shadow: 5px 5px 20px rgb(90, 141, 140);
+    margin-top: 25px;
+    /* border: 1px solid black; */
+}
+
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contactMe {
+    background-color: rgb(226, 251, 249);
+    border-radius: 25px;
+    width: 600px;
+    height: 300px;
+    box-shadow: 5px 5px 20px rgb(90, 141, 140);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experienceIndividual {
+    background-color: rgb(226, 251, 249);
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 5px 20px rgb(90, 141, 140);
+    margin-top: 25px;
+    /* border: 1px solid black; */
+}
+
+.footerTitle {
+    color: white;
+    text-align: center;
+}
+
+.hamburgerButton {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.inputButton {
+    border-radius: 25px;
+}
+
+.inputDetails {
+    border-radius: 25px;
+    width: 300px;
+}
+
+.inputMessage {
+    border-radius: 25px;
+    width: 550px;
+}
+
+.main {
+    background-color: rgb(166, 243, 255);
+    height: 100vh; /*to fill the screen*/
+    font-size: 30px;
+}
+
+.mainArea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.mainSocials {
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.mainText {
+    margin-left: 40px;
+    margin-bottom: 180px;
+}
+
+.secretLogin {
+    color:rgb(106, 164, 173);
+}
+
+.sub-section {
+    background-color: rgb(255, 190, 255);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.sub-sectionExperience {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+.sub-sectionBlog {
+    background-color: rgb(255, 241, 114);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+.threeStripes {
+    width: 40px;
+}
+
+/********************* Animation: *********************/
+
+.aboutButton:hover {
+    background-color: rgb(255, 106, 0);
+    color: white;
+}
+
+.aboutButton:active {
+    background-color: black;
+    color: white;
+}
+
+.blogIndividual:hover {
+    transition: 0.2s;
+    background-color: rgb(249, 199, 232);
+    height: 300px;
+}
+
+.blogIndividual:hover > .blogBlurb{
+    display: none;
+}
+
+.blogIndividual:hover > .blogContent{
+    transition: 30s;
+    display: flex;
+}
+
+.experienceIndividual:hover {
+    background-color: rgb(255, 255, 154);
+}
+
+li:hover {
+    background-color: pink;
+}
+
+/* When browser width <750px */
+@media only screen and (max-width: 750px) {
+    .hamburgerButton {
+        display: block;
+        border: 0;
+        background-color: transparent;
+    }
+
+    ul {
+        display: none;
+        width: 300px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+}
+
